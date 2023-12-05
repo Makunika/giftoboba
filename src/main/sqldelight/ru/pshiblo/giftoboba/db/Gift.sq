@@ -1,0 +1,21 @@
+CREATE TABLE Gift (
+    id SERIAL PRIMARY KEY,
+    url TEXT,
+    descryption TEXT,
+    price DECIMAL NOT NULL,
+    userId INTEGER NOT NULL,
+    addDate TIMESTAMP NOT NULL,
+    order INTEGER NOT NULL DEFAULT 1
+);
+
+selectAll:
+SELECT * FROM Gift;
+
+deleteById:
+DELETE FROM Gift WHERE id = ?;
+
+selectByUserId:
+SELECT * FROM Gift WHERE userId = ?;
+
+insertGift:
+INSERT INTO Gift (url, descryption, price, addDate, order, userId) VALUES ?;

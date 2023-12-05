@@ -1,5 +1,4 @@
-
-rootProject.name = "wishlist-bot"
+rootProject.name = "giftoboba"
 
 pluginManagement {
     repositories {
